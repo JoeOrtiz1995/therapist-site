@@ -1,3 +1,109 @@
 * {
     background-color: aqua;
 }
+
+/* === GLOBAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === COLOR PALETTE VARIABLES === */
+:root {
+  --primary: #A4CCCC;          /* rgb(164,204,204) */
+  --primary-dark: #7FAAAA;     /* Darker variant */
+  --accent: #FFCFDB;           /* rgb(255,207,219) */
+  --accent-light: #FFE6ED;     /* Lighter accent */
+  --highlight: #FEF3D5;        /* rgb(254,243,213) */
+  --text-color: #3D4256;       /* rgb(86,66,86) */
+  --bg-light: #FFFFFF;
+  --bg-alt: #F7F7F7;
+}
+
+/* === Base Typography & Layout === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-alt);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+main {
+    background-color: var(--highlight);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* === Headings & Links === */
+h1, h2, h3, h4 {
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Navigation === */
+.navbar {
+  background-color: var(--primary);
+  padding: 1rem;
+}
+
+/* .navbar .navbar-brand, .navbar a {
+  color: white;
+} */
+
+/* === Buttons === */
+.btn {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary);
+  border: 1px solid var(--primary-dark);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* === Sections === */
+.section {
+  padding: 3rem 0;
+  background-color: var(--bg-light);
+}
+
+.section.alt {
+  background-color: var(--highlight);
+}
+
+/* === Highlights & Accents === */
+.highlight-box {
+  background-color: var(--accent);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.highlight-box.light {
+  background-color: var(--accent-light);
+}
+
+/* === Footer === */
+footer {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
