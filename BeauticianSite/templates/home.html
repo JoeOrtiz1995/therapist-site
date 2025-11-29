@@ -3,22 +3,54 @@
 {% load static %}
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- Link to the CSS file -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
-    <title>Home</title>
-</head>
-<body>
-    <h1>Welcome to the Homepage</h1>
-    <p>This is the main content area.</p>
-    <p>Check out the <a href="/about">About Us</a> page.</p>
+        <title>Home</title>
+    </head>
+    <body>
+        <header>
+            <nav>
 
-    <!-- Link to the JavaScript file -->
-    <script src="{% static 'js/main.js' %}"></script>
+           </nav>
+        </header>
 
-</body>
+        <main>
+            <h1>Welcome to the Homepage</h1>
+            <p>This is the main content area.</p>
+            <p>Check out the <a href="/about">About Us</a> page.</p>
+            <div>Colours Test:
+                <div id="primary">
+                    <p>Primary</p>
+                </div>
+                <div id="primary-dark">
+                    <p>Primary Dark</p>
+                </div>
+                <div id="accent">
+                    <p>accent</p>
+                </div>
+                <div id="accent-light">
+                    <p>accent-light</p>
+                </div>
+                <div id="highlight">
+                    <p>highlight</p>
+                </div>
+                <div id="text-color">
+                    <p>text-color</p>
+                </div>
+                <div id="bg-light">
+                    <p>bg-light</p>
+                </div>
+                <div id="bg-alt">
+                    <p>bg-alt</p>
+                </div>
+            </div>
+        </main>
+        <!-- Link to the JavaScript file -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
 </html>

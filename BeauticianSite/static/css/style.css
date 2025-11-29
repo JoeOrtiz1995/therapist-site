@@ -7,12 +7,12 @@
 
 /* === COLOR PALETTE VARIABLES === */
 :root {
-  --primary: #A4CCCC;          /* rgb(164,204,204) */
-  --primary-dark: #7FAAAA;     /* Darker variant */
-  --accent: #FFCFDB;           /* rgb(255,207,219) */
-  --accent-light: #FFE6ED;     /* Lighter accent */
-  --highlight: #FEF3D5;        /* rgb(254,243,213) */
-  --text-color: #3D4256;       /* rgb(86,66,86) */
+  --primary: #A4CCCC;          /* Celeste rgb(164,204,204) */
+  --primary-dark: #7FAAAA;     /* Darker Celeste variant */
+  --accent: #FFCFDB;           /* Salmon rgb(255,207,219) */
+  --accent-light: #FFE6ED;     /* Lighter Salmon accent */
+  --highlight: #FEF3D5;        /* Yellow rgb(254,243,213) */
+  --text-color: #3D4256;       /* Gray/Navy rgb(86,66,86) */
   --bg-light: #FFFFFF;
   --bg-alt: #F7F7F7;
 }
@@ -23,6 +23,11 @@ body {
   background-color: var(--bg-alt);
   color: var(--text-color);
   line-height: 1.6;
+}
+
+nav {
+    background-color: var(--primary-dark);
+    padding: 1rem;
 }
 
 main {
@@ -102,4 +107,32 @@ footer {
   padding: 2rem 0;
   text-align: center;
   margin-top: 3rem;
+}
+
+#primary {
+  background-color: var(--primary);          /* Celeste rgb(164,204,204) */
+}
+
+#primary-dark {
+  background-color: var(--primary-dark);     /* Darker Celeste variant */
+}
+
+#accent {
+background-color: var(--accent);
+}
+
+#accent-light {
+background-color: var(--accent-light);
+}
+
+#highlight {
+background-color: var(--highlight);
+}
+
+#bg-light {
+background-color: var(--bg-light);
+}
+
+#bg-alt {
+background-color: var(--bg-alt);
 }
